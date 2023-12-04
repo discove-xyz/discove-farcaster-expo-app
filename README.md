@@ -19,6 +19,8 @@ No longer maintained, this code is for reference purposes only, and uses discove
 - reporting users/mute user (iOS rules)
 - search, search filters (hot/new/top)
 - feeds
+- threads
+- cast rendering, including rich embeds, urls, mentions
 - deep linking
 - swiping between tabs
 - custom feeds (browsing and creation)
