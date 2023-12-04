@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+ios/
+android/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+build/
+metro.config.js
+index.js

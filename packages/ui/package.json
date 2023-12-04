@@ -1,0 +1,15 @@
+{
+  "name": "@discove/ui",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@discove/util": "*",
+    "react": "^18.2.0",
+    "swr": "^2.1.2",
+    "@sentry/types": "^7.17.3",
+    "@supabase/supabase-js": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.0"
+  }
+}

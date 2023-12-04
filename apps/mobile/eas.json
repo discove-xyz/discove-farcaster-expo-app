@@ -1,0 +1,88 @@
+{
+  "cli": {
+    "version": ">= 3.17.0",
+    "appVersionSource": "remote",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "base": {
+      "node": "18.17.0"
+    },
+    "development": {
+      "extends": "base",
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "env": {
+        "API_URL": "http://127.0.0.1",
+        "ENV": "dev",
+        "POSTHOG_API_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>",
+        "SUPABASE_URL": "http://localhost:54321",
+        "SUPABASE_ANON_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>"
+      }
+    },
+    "preview": {
+      "extends": "base",
+      "channel": "preview",
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "env": {
+        "API_URL": "https://www.discove.xyz",
+        "ENV": "prod",
+        "POSTHOG_API_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>",
+        "SUPABASE_URL": "https://svcwyzihnrklmlwjpetl.supabase.co",
+        "SUPABASE_ANON_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>"
+      }
+    },
+    "preview2": {
+      "extends": "base",
+      "channel": "preview",
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "API_URL": "https://www.discove.xyz",
+        "ENV": "prod",
+        "POSTHOG_API_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>",
+        "SUPABASE_URL": "https://svcwyzihnrklmlwjpetl.supabase.co",
+        "SUPABASE_ANON_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>"
+      }
+    },
+    "preview3": {
+      "extends": "base",
+      "channel": "preview",
+      "developmentClient": true,
+      "env": {
+        "API_URL": "https://www.discove.xyz",
+        "ENV": "prod",
+        "POSTHOG_API_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>",
+        "SUPABASE_URL": "https://svcwyzihnrklmlwjpetl.supabase.co",
+        "SUPABASE_ANON_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>"
+      }
+    },
+    "production": {
+      "extends": "base",
+      "channel": "production",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "env": {
+        "API_URL": "https://www.discove.xyz",
+        "ENV": "prod",
+        "POSTHOG_API_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>",
+        "SUPABASE_URL": "https://svcwyzihnrklmlwjpetl.supabase.co",
+        "SUPABASE_ANON_KEY": "<ADDYOURSHEREORUSEANENVVARIABLELIKEISCORRECT>"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
