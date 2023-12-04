@@ -3,6 +3,7 @@
 No longer maintained, this code is for reference purposes only, and uses discove apis that may not be stable or up
 
 ## Stack
+- typescript
 - expo
 - react-native
 - no UI library
